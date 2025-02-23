@@ -5,7 +5,8 @@ export interface movieDataType{
   year:String,
   category:String,
   IMDB:String,
-  isBookmarked:boolean
+  isBookmarked:boolean,
+  isTrending:boolean
 }
 
 export const movieData = [
@@ -16,7 +17,8 @@ export const movieData = [
     year: "2020",
     category: "korean",
     IMDB: "7.1",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "2",
@@ -25,7 +27,10 @@ export const movieData = [
     year: "2024",
     category: "korean",
     IMDB: "6.2",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
+    
+
   },
   {
     id: "3",
@@ -34,7 +39,8 @@ export const movieData = [
     year: "2024",
     category: "korean",
     IMDB: "6.2",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "4",
@@ -43,7 +49,8 @@ export const movieData = [
     year: "2024",
     category: "korean",
     IMDB: "6.9",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "5",
@@ -52,7 +59,8 @@ export const movieData = [
     year: "2011",
     category: "korean",
     IMDB: "7.7",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "6",
@@ -61,7 +69,8 @@ export const movieData = [
     year: "2016",
     category: "english",
     IMDB: "7.4",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "7",
@@ -70,7 +79,8 @@ export const movieData = [
     year: "2016",
     category: "english",
     IMDB: "7.4",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "8",
@@ -79,7 +89,8 @@ export const movieData = [
     year: "2022",
     category: "english",
     IMDB: "5.9",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "9",
@@ -88,7 +99,8 @@ export const movieData = [
     year: "2022",
     category: "english",
     IMDB: "6.5",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "10",
@@ -97,7 +109,8 @@ export const movieData = [
     year: "2022",
     category: "english",
     IMDB: "4.4",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "11",
@@ -106,7 +119,8 @@ export const movieData = [
     year: "2018",
     category: "tamil",
     IMDB: "8.5",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "12",
@@ -115,7 +129,8 @@ export const movieData = [
     year: "2022",
     category: "tamil",
     IMDB: "6.4",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "13",
@@ -124,7 +139,8 @@ export const movieData = [
     year: "2016",
     category: "tamil",
     IMDB: "6",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "14",
@@ -133,7 +149,8 @@ export const movieData = [
     year: "2024",
     category: "tamil",
     IMDB: "8.2",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
   {
     id: "15",
@@ -142,6 +159,7 @@ export const movieData = [
     year: "2018",
     category: "tamil",
     IMDB: "5.6",
-    isBookmarked:false
+    isBookmarked:false,
+    isTrending:true
   },
 ];

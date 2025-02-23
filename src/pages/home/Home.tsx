@@ -11,11 +11,13 @@ function Home() {
   const [search, setSearch] = useState("");
   const [searchList,setSearchList]=useState<movieDataType[]>([]);
   const{ state}=useContext(MovieContext);
-  console.log(state);
-const trendingList:any=[];
-const recommendedList:any=[];
+  const { movies } = state;
+const trendingList=movies.filter((item)=>item.isTrending===true);
+const recommendedList=movies.filter((item)=>item.isTrending !==true);
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
+    const newList=movies.filter((movies)=>movies.title.toLowerCase().includes(search.toLowerCase()));
+    setSearchList(newList)
   };
 
   return (
