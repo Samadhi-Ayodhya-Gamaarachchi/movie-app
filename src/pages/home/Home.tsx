@@ -1,11 +1,19 @@
 import { Box, InputAdornment, InputBase, Paper, Typography } from '@mui/material';
 import LayOut from '../../Layout/LayOut';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import SearchIcon from "@mui/icons-material/Search";
+import MovieTrendList from '../../components/movie-list/MovieTrendList';
+import MovieList from '../../components/movie-list/MovieList';
+import { movieDataType } from '../../assets/data';
+import { MovieContext } from '../../context/movie-context';
 
 function Home() {
   const [search, setSearch] = useState("");
-
+  const [searchList,setSearchList]=useState<movieDataType[]>([]);
+  const{ state}=useContext(MovieContext);
+  console.log(state);
+const trendingList:any=[];
+const recommendedList:any=[];
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   };
@@ -50,7 +58,7 @@ function Home() {
             </Typography>
             <MovieTrendList trendingList={trendingList} />
 
-            {/* Recommended Section */}
+           
             <Typography variant="h5" component="h1" my={6} fontWeight={400}>
               Recommended For You
             </Typography>
