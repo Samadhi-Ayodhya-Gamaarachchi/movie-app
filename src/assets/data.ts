@@ -17,7 +17,7 @@ export const movieData = [
     year: "2020",
     category: "korean",
     IMDB: "7.1",
-    isBookmarked:false,
+    isBookmarked:true,
     isTrending:true
   },
   {
@@ -39,7 +39,7 @@ export const movieData = [
     year: "2024",
     category: "korean",
     IMDB: "6.2",
-    isBookmarked:false,
+    isBookmarked:true,
     isTrending:true
   },
   {
@@ -69,7 +69,7 @@ export const movieData = [
     year: "2016",
     category: "english",
     IMDB: "7.4",
-    isBookmarked:false,
+    isBookmarked:true,
     isTrending:true
   },
   {
@@ -109,7 +109,7 @@ export const movieData = [
     year: "2022",
     category: "english",
     IMDB: "4.4",
-    isBookmarked:false,
+    isBookmarked:true,
     isTrending:true
   },
   {
